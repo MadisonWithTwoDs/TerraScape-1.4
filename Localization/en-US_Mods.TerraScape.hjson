@@ -60,4 +60,9 @@ Items: {
 		DisplayName: Tutorial Sword
 		Tooltip: ""
 	}
+
+	RingOfWealth: {
+		DisplayName: Ring Of Wealth
+		Tooltip: ""
+	}
 }
