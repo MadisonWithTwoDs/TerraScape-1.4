@@ -1,68 +1,90 @@
 Items: {
-	AmuletDamned: {
-		DisplayName: Amulet of the Damned
-		Tooltip: TBD
-	}
-
-	AmuletOfDefence: {
-		DisplayName: Amulet Of Defense
-		Tooltip: Adds +7 to defense
-	}
-
-	AmuletOfFury: {
-		DisplayName: Amulet Of Fury
-		Tooltip:
-			'''
-			+15% to all damage types
-			+15 defense
-			'''
-	}
-
-	AmuletOfGlory: {
-		DisplayName: Amulet Of Glory
-		Tooltip:
-			'''
-			+10% to all damage types
-			+3 defense
-			'''
-	}
-
-	AmuletOfMagic: {
-		DisplayName: Amulet Of Magic
-		Tooltip: Adds 10% to magic damage
-	}
-
-	AmuletOfPower: {
-		DisplayName: Amulet Of Power
-		Tooltip:
-			'''
-			+6% to all damage types
-			+6 defense
-			'''
-	}
-
-	AmuletOfStrength: {
-		DisplayName: Amulet Of Strength
-		Tooltip: +10% to melee damage
-	}
-
-	AmuletOfTorture: {
-		DisplayName: Amulet Of Torture
-		Tooltip: +15% to all damage types
-	}
-
-	TutorialBow: {
-		DisplayName: Tutorial Bow
-		Tooltip: ""
-	}
-
 	TutorialSword: {
+		Tooltip: Purely for testing purposes
 		DisplayName: Tutorial Sword
-		Tooltip: ""
 	}
 
 	RingOfWealth: {
+		Tooltip: Doubles the Chance of hitting the rare drop table
 		DisplayName: Ring Of Wealth
-		Tooltip: ""
+	}
+
+	AmuletOfTorture: {
+		Tooltip: +15% to all damage types
+		DisplayName: Amulet Of Torture
+	}
+
+	AmuletOfStrength: {
+		Tooltip: +10% to melee damage
+		DisplayName: Amulet Of Strength
+	}
+
+	AmuletOfPower: {
+		Tooltip:
+			'''
+				+6% to all damage types
+				+6 defense
+			'''
+		DisplayName: Amulet Of Power
+	}
+
+	AmuletOfMagic: {
+		Tooltip: Adds 10% to magic damage
+		DisplayName: Amulet Of Magic
+	}
+
+	AmuletOfGlory: {
+		Tooltip:
+			'''
+				+10% to all damage types
+				+3 defense
+			'''
+		DisplayName: Amulet Of Glory
+	}
+
+	AmuletOfFury: {
+		Tooltip:
+			'''
+				+15% to all damage types
+				+15 defense
+			'''
+		DisplayName: Amulet Of Fury
+	}
+
+	AmuletOfDefence: {
+		Tooltip: Adds +7 to Defense
+		DisplayName: Amulet Of Defense
+	}
+
+	AmuletDamned: {
+		Tooltip: TBD
+		DisplayName: Amulet of the Damned
+	}
+
+	BerserkerNecklace: {
+		Tooltip:
+			'''
+				Adds melee damage equal to the amount of defense under 100
+				Ex: Def = 90 | 100-90 = 10 | player gets +10 melee damage
+			'''
+		DisplayName: Berserker Necklace
+	}
+
+	TomeOfFire: {
+		DisplayName: Tome Of Fire
+		Tooltip:
+			'''
+				10% increased Magic Damage
+				Missing added Fire Damage
+			'''
+	}
+
+	TormentedBracelet: {
+		DisplayName: Tormented Bracelet
+		Tooltip:
+			'''
+				18% increased Magic Damage
+				Missing tormented souls
+			'''
 	}
 }
