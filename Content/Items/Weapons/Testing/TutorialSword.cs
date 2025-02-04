@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TerraScape.Content.Items.Weapons
+namespace TerraScape.Content.Items.Weapons.Testing
 { 
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:
@@ -18,6 +18,7 @@ namespace TerraScape.Content.Items.Weapons
 			Item.height = 80;
 			Item.useTime = 5;
 			Item.useAnimation = 20;
+			Item.useTurn = true;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
 			Item.value = Item.buyPrice(silver: 1);

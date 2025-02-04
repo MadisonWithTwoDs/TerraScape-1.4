@@ -1,7 +1,7 @@
 Items: {
 	TutorialSword: {
 		Tooltip: Purely for testing purposes
-		DisplayName: Tutorial Sword
+		DisplayName: Testing Sword
 	}
 
 	RingOfWealth: {
@@ -87,4 +87,16 @@ Items: {
 				Missing tormented souls
 			'''
 	}
+
+	AbyssalWhip: {
+		DisplayName: Abyssal Whip
+		Tooltip: ""
+	}
+
+	DragonClaws: {
+		DisplayName: Dragon Claws
+		Tooltip: ""
+	}
 }
+
+Projectiles.AbyssalWhipProjectile.DisplayName: Abyssal Whip Projectile
