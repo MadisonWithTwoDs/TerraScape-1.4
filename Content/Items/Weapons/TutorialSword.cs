@@ -12,11 +12,11 @@ namespace TerraScape.Content.Items.Weapons
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TutorialMod.hjson' file.
 		public override void SetDefaults()
 		{
-			Item.damage = 100;
+			Item.damage = 1000000;
 			Item.DamageType = DamageClass.Melee;
-			Item.width = 40;
-			Item.height = 40;
-			Item.useTime = 20;
+			Item.width = 80;
+			Item.height = 80;
+			Item.useTime = 5;
 			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
@@ -24,7 +24,7 @@ namespace TerraScape.Content.Items.Weapons
 			Item.rare = ItemRarityID.Blue;
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
-			Item.shoot = ProjectileID.HolyArrow;
+			//Item.shoot = ProjectileID.HolyArrow;
 		}
 
 		public override void AddRecipes()
