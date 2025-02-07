@@ -1,6 +1,9 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.NPC;
+using Terraria.Audio;
+
 
 namespace TerraScape.Content.Items.Weapons.Melee{ 
 	public class DragonClaws : ModItem{
@@ -15,27 +18,33 @@ namespace TerraScape.Content.Items.Weapons.Melee{
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 2;
 			Item.value = Item.buyPrice(gold: 3);
-			Item.rare = ItemRarityID.Yellow;
+			Item.rare = ItemRarityID.Master;
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
 		}
 		public override void ModifyHitNPC(Player player, NPC target, ref NPC.HitModifiers modifiers){
-			if (Main.rand.NeftFloat() < 0.1f)
+			if (Main.rand.NextFloat() < 0.1f){
+				 SoundEngine.PlaySound(new SoundStyle("TerraScape/Assets/Sounds/Melee/DragonClawProc"), player.position);
 
-			for(int 1=0, int<3:i++){
-				int extraDamage = (int)(player.GetWeaponDamage(Item)*0.5f);
-				target.StrikeNPC(extraDamage, 0f, player.direction);
+			for(int i = 0; i < 3 ; i++){
+				HitInfo extraHit = new HitInfo(){
+					Damage =  (int)(player.GetWeaponDamage(Item) * 0.5f),
+					Knockback = 0f,
+					Crit = false
+				};
+				target.StrikeNPC(extraHit);
 
-				for (int j = 0; j < 5; j++){ // Create multiple dust particles
-                	Dust dust = Dust.NewDustDirect(player.position, player.width, player.height, DustID.Shadowflame, 
-                    player.velocity.X * -0.5f, player.velocity.Y * -0.5f, 100, default, 1.5f);
-                	dust.noGravity = true; // Make the dust float
-                	dust.fadeIn = 1.2f; // Slightly increase its lifespan
-                	dust.velocity *= 0.2f; // Slow down movement for a trailing effect
-            	}
+				 	// Improved Afterimage Effect
+            		for (int j = 0; j < 10; j++){ // Spawn more dust particles
+                		Dust dust = Dust.NewDustDirect(player.position, player.width, player.height, DustID.Shadowflame, 0f, 0f, 100, default, 2.5f); // Increased scale
+                		dust.noGravity = true; // Prevent dust from falling
+                		dust.fadeIn = 1.5f; // Makes dust last longer
+                		dust.velocity *= 0.1f; // Slower movement for a lingering effect
+                		dust.alpha = 150; // Makes the dust more transparent
+            		}
+				}
 			}
 		}
-		
 			
 		
 

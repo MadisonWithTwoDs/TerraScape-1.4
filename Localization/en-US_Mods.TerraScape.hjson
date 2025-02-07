@@ -90,11 +90,25 @@ Items: {
 
 	AbyssalWhip: {
 		DisplayName: Abyssal Whip
-		Tooltip: ""
+		Tooltip: TBD
 	}
 
 	DragonClaws: {
 		DisplayName: Dragon Claws
+		Tooltip: 10% chance to hit 3 extra times at 50% attack damage
+	}
+
+	BandosGodsword: {
+		DisplayName: Bandos Godsword
+		Tooltip:
+			'''
+				10% for -15 defense debuff on NPC
+				10% to hit for an extra 50% damage
+			'''
+	}
+
+	BandosHelmet: {
+		DisplayName: Bandos Helmet
 		Tooltip: ""
 	}
 }
